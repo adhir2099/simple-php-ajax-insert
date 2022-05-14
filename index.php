@@ -13,8 +13,9 @@
     </head>  
 
     <body class="d-flex flex-column min-vh-100">  
-
-        <div class="container mb-5">  
+        <span id="forkongithub"><a href="https://github.com/adhirsaurio/cawfy-template">Fork me on GitHub</a></span> 
+        
+            <div class="container mb-5">  
             <div class="mb-5"></div>
             <div id="action_alert" class="text-center"></div>
             <div class="mb-5"></div>
@@ -39,7 +40,7 @@
         </div>
 
         <!-- MODAL CREATE -->
-        <div id="employeeModal" class="modal fade" data-keyboard="false" data-backdrop="static">
+        <div id="employeeModal" class="modal fade glass" data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
