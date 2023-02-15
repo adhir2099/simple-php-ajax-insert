@@ -9,7 +9,16 @@ Insert records on modal with ajax. The form is responsive.
 # Database 
 * employee.sql
 
-There is the schema for the table.
+```sql
+CREATE TABLE `employees` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `address` varchar(64) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `age` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+```
 
 ## Libraries included
 * Bootstrap v4

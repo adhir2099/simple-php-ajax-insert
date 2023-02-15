@@ -39,7 +39,7 @@ if(isset($_POST["action"])){
         }else{
             $output .= '
                 <tr>
-                    <td align="center">No se encontraron registros</td>
+                    <td align="center">No records found</td>
                 </tr>';
         }
 
@@ -50,7 +50,7 @@ if(isset($_POST["action"])){
     }
 }
 
-//Create
+//Create-Insert
 if($_POST["action"] == "Save"){
     
     $statement = $connect->prepare("INSERT INTO employees (name,address,gender,age) VALUES (:name,:address,:gender,:age)");

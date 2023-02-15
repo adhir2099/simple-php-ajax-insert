@@ -36,10 +36,10 @@
         </footer>
 
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Insert records on modal with ajax © 2022</small></div>
+            <div class="container"><small>Insert records on modal with ajax © 2023</small></div>
         </div>
 
-        <!-- MODAL CREATE -->
+        <!-- MODAL -->
         <div id="employeeModal" class="modal fade glass" data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -59,7 +59,11 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Gender</label>
-                                <input type="text" class="form-control" id="gender" name="gender" placeholder="gender">
+                                <select class="form-control" id="gender" name="gender">
+                                    <option value="" selected="selected"> Chose your gender</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Age</label>
