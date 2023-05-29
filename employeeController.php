@@ -54,16 +54,12 @@ if(isset($_POST["action"])){
 if($_POST["action"] == "Save"){
     
     $statement = $connect->prepare("INSERT INTO employees (name,address,gender,age) VALUES (:name,:address,:gender,:age)");
-    $result = $statement->execute(
-        array(
-            ':name'    => $_POST["name"],
-            ':address' => $_POST["address"],
-            ':gender'  => $_POST["gender"],
-            ':age'     => $_POST["age"]
-        )
-    );
+    $statement->bindParam(':name', $_POST["name"]);
+    $statement->bindParam(':address', $_POST["address"]);
+    $statement->bindParam(':gender', $_POST["gender"]);
+    $statement->bindParam(':age', $_POST["age"]);
 
-    if(!empty($result)){
+    if($statement->execute()){
         echo 'recordInserted';
     }
 }

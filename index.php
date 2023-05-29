@@ -13,9 +13,9 @@
     </head>  
 
     <body class="d-flex flex-column min-vh-100">  
-        <span id="forkongithub"><a href="https://github.com/adhirsaurio/cawfy-template">Fork me on GitHub</a></span> 
+        <span id="forkongithub"><a href="https://github.com/adhirsaurio/simple-php-ajax-insert">Fork me on GitHub</a></span> 
         
-            <div class="container mb-5">  
+        <div class="container mb-5">  
             <div class="mb-5"></div>
             <div id="action_alert" class="text-center"></div>
             <div class="mb-5"></div>
@@ -29,15 +29,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="lead mb-0">Insert records on modal with ajax <a href="https://github.com/adhirsaurio?tab=repositories"><i class="fab fa-github-alt"></i></a></p>
+                        <p class="lead mb-0">Insert records on modal with ajax <a href="https://github.com/adhirsaurio/simple-php-ajax-insert"><i class="fab fa-github-alt"></i></a></p>
                     </div>
                 </div>
             </div>
         </footer>
-
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Insert records on modal with ajax © 2023</small></div>
-        </div>
 
         <!-- MODAL -->
         <div id="employeeModal" class="modal fade glass" data-keyboard="false" data-backdrop="static">
