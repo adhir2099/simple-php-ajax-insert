@@ -7,7 +7,8 @@ if(isset($_POST["action"])){
     //Load data
     if($_POST["action"] == "Load"){
 
-        $statement = $connect->prepare("SELECT * FROM employees ORDER BY name ASC");
+        $qry = "SELECT * FROM employees ORDER BY name ASC";
+        $statement = $connect->prepare($qry);
         $statement->execute();
         $result = $statement->fetchAll();
         $output = '';
@@ -53,7 +54,8 @@ if(isset($_POST["action"])){
 //Create-Insert
 if($_POST["action"] == "Save"){
     
-    $statement = $connect->prepare("INSERT INTO employees (name,address,gender,age) VALUES (:name,:address,:gender,:age)");
+    $qry ="INSERT INTO employees (name,address,gender,age) VALUES (:name,:address,:gender,:age)";
+    $statement = $connect->prepare($qry);
     $statement->bindParam(':name', $_POST["name"]);
     $statement->bindParam(':address', $_POST["address"]);
     $statement->bindParam(':gender', $_POST["gender"]);
